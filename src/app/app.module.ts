@@ -4,7 +4,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import { NgxGlobusStyleModule } from 'ngx-globus-style';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -12,8 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    NgxGlobusStyleModule,
-    BrowserAnimationsModule
+    NgxGlobusStyleModule
   ],
   providers: [],
   bootstrap: [AppComponent],
