@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-globus-style": [
+        "dist/ngx-globus-style"
+      ],
+      "ngx-globus-style/*": [
+        "dist/ngx-globus-style/*"
+      ]
+    }
   }
 }

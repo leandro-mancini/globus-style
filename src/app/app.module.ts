@@ -3,12 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { NgxGlobusStyleModule } from 'ngx-globus-style';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxGlobusStyleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
