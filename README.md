@@ -11,8 +11,7 @@
 
 # Começando
 
-Consulte o nosso [Guia de Introdução](http://opensource.globus7.com.br) 
-se você estiver construindo seu primeiro projeto com Material Angular.
+Consulte o nosso [Guia de Introdução](http://opensource.globus7.com.br).
 
 ## Instalação:
 
