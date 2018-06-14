@@ -12,4 +12,5 @@ export * from './lib/dialog-notification/dialog-notification.module';
 
 // Toast notification
 export * from './lib/toast-notification/toast-notification.component';
+export * from './lib/toast-notification/toast-notification.service';
 export * from './lib/toast-notification/toast-notification.module';
