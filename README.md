@@ -10,7 +10,7 @@
 * [Angular](https://angular.io) `npm install -g @angular/cli`
 * [Angular Material](https://material.angular.io) `npm install --save @angular/material @angular/cdk`
 
-#### Demo
+## Demo
 [Documentation, demos](http://opensource.globus7.com.br)
 
 # Começando
