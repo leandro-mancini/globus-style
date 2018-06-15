@@ -43,7 +43,7 @@ export class AppModule {
 
 Basta seguir as instruções de introdução para o uso.
 
-* [Toast Notification](#Toast Notification)
+* [Installation](#installation)
 
 #### Toast Notification:
 
