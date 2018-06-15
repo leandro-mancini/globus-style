@@ -41,9 +41,11 @@ export class AppModule {
 
 ## Components
 
-#### Toast Notification:
-
 Basta seguir as instruções de introdução para o uso.
+
+* [Toast Notification](#Toast Notification)
+
+#### Toast Notification:
 
 ```js
 import { ToastNotificationService } from 'ngx-globus-style';
