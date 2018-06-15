@@ -25,7 +25,9 @@ Depois de instalar as dependências acima, instale o `ngx-globus-style` via [npm
 npm install --save ngx-globus-style
 ```
 
-Uma vez instalado, você precisa importar nosso módulo principal no seu módulo de aplicativo:
+#### 1. Importe o `GlobusStyleModule`:
+
+Finalmente, você pode usar o ngx-globus-style no seu projeto Angular. Uma vez instalado, você precisa importar nosso módulo principal `GlobusStyleModule` no seu root NgModule do seu aplicativo:
 
 ```js
 import { GlobusStyleModule } from 'ngx-globus-style';
