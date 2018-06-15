@@ -23,7 +23,7 @@ npm install --save ngx-globus-style
 Uma vez instalado, você precisa importar nosso módulo principal no seu módulo de aplicativo:
 
 ```js
-import { GlobusStyleModule } from 'ngx-treeview';
+import { GlobusStyleModule } from 'ngx-globus-style';
 
 @NgModule({
   declarations: [AppComponent, ...],

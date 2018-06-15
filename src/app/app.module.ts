@@ -3,7 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { NgxGlobusStyleModule } from 'ngx-globus-style';
+import { GlobusStyleModule } from 'ngx-globus-style';
 
 
 @NgModule({
@@ -12,7 +12,7 @@ import { NgxGlobusStyleModule } from 'ngx-globus-style';
   ],
   imports: [
     BrowserModule,
-    NgxGlobusStyleModule
+    GlobusStyleModule
   ],
   providers: [],
   bootstrap: [AppComponent],

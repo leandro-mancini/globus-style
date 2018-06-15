@@ -15,4 +15,4 @@ import { DialogNotificationModule } from './dialog-notification/dialog-notificat
     ToastNotificationModule
   ]
 })
-export class NgxGlobusStyleModule { }
+export class GlobusStyleModule { }
