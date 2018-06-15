@@ -49,6 +49,8 @@ Basta seguir as instruções de introdução para o uso.
 
 #### Toast:
 
+Inicie o `ToastNotificationService` para seu aplicativo:
+
 ```js
 import { ToastNotificationService } from 'ngx-globus-style';
 
