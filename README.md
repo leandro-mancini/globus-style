@@ -14,7 +14,7 @@ Consulte o nosso [Guia de Introdução](http://opensource.globus7.com.br).
 
 ## Instalação:
 
-install `ngx-globus-style` via:
+install `ngx-globus-style` via [npm](https://www.npmjs.com/):
 
 ```bash
 npm install --save ngx-globus-style
