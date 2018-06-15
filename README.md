@@ -8,7 +8,7 @@
 ## Dependências
 
 * [Angular](https://angular.io) `npm install -g @angular/cli`
-* [Angular Material](https://material.angular.io) `npm install --save @angular/material @angular/cdk`. Se estiver usando a versão do Angular 6 execute isto `ng add @angular/material`
+* [Angular Material](https://material.angular.io) `npm install --save @angular/material @angular/cdk`. Se estiver usando a versão do [Angular 6](https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4) execute isto `ng add @angular/material`
 
 ## Demo
 [Documentation, demos](http://opensource.globus7.com.br)
