@@ -4,6 +4,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import { GlobusStyleModule } from 'ngx-globus-style';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -12,7 +14,8 @@ import { GlobusStyleModule } from 'ngx-globus-style';
   ],
   imports: [
     BrowserModule,
-    GlobusStyleModule
+    GlobusStyleModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent],
