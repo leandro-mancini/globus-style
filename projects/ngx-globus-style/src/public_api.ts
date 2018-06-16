@@ -8,6 +8,7 @@ export * from './lib/ngx-globus-style.module';
 
 // Dialog notification
 export * from './lib/dialog-notification/dialog-notification.component';
+export * from './lib/dialog-notification/dialog-notification.service';
 export * from './lib/dialog-notification/dialog-notification.module';
 
 // Toast notification
