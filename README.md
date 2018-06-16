@@ -74,6 +74,40 @@ export class AppComponent {
 <button (click)="showToast()">Exibir Toast!</button>
 ```
 
+#### Dialog:
+
+Inicie o `DialogNotificationService` para seu aplicativo:
+
+```js
+import { DialogNotificationService } from 'ngx-globus-style';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  constructor(
+    private toast: DialogNotificationService
+  ) { }
+
+  alertOpen() {
+    this.dialog.alert('Atenção', ['Teste de Mensagem 1');
+  }
+
+  confirmOpen() {
+    this.dialog.confirm('Atenção', 'Teste de mensagem').subscribe((resp: any) => {
+      console.log(resp);
+    });
+  }
+}
+```
+
+```html
+<button (click)="alertOpen()">Exibir Alerta!</button>
+<button (click)="confirmOpen()">Exibir Confirmação!</button>
+```
+
 ## Contribuindo
 
 Sou muito grato pelas suas ideias, propostas e descobri bugs que você pode deixar em questões do github. Desde já, obrigado!
