@@ -62,7 +62,7 @@ import { ToastNotificationService } from 'ngx-globus-style';
 })
 export class AppComponent {
   constructor(
-    private toast: ToastNotificationService
+    public toast: ToastNotificationService
   ) { }
 
   showToast() {
@@ -89,7 +89,7 @@ import { DialogNotificationService } from 'ngx-globus-style';
 })
 export class AppComponent {
   constructor(
-    private toast: DialogNotificationService
+    public dialog: DialogNotificationService
   ) { }
 
   alertOpen() {
