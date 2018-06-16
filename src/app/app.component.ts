@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ToastNotificationService, DialogNotificationService } from 'ngx-globus-style';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -7,26 +7,22 @@ import { ToastNotificationService, DialogNotificationService } from 'ngx-globus-
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(
-    private toast: ToastNotificationService,
-    private dialog: DialogNotificationService
-  ) { }
-
   title = 'app';
 
-  toastOpen() {
-    this.toast.open('Mensagem de teste.');
+  constructor(
+    private translate: TranslateService
+  ) {
+    this.initTranslate();
   }
 
-  alertOpen() {
-    this.dialog.alert('Atenção', ['Teste de Mensagem 1', 'Teste de Mensagem 2'], {
-      width: '580px'
-    });
-  }
+  initTranslate() {
+    // Defina o idioma padrão para cadeias de tradução e o idioma atual.
+    this.translate.setDefaultLang('pt');
 
-  confirmOpen() {
-    this.dialog.confirm('Atenção', 'Teste de mensagem').subscribe((resp) => {
-      console.log(resp);
-    });
+    if (this.translate.getBrowserLang() !== undefined) {
+        this.translate.use(this.translate.getBrowserLang());
+    } else {
+        this.translate.use('pt'); // Defina seu idioma aqui
+    }
   }
 }

@@ -1,4 +1,49 @@
-<button (click)="toastOpen()">Toast!</button>
+<mat-toolbar>
+  <mat-toolbar-row class="row align-items-center">
+    <div class="col-auto">
+      <h1>{{ 'PROJETO' | translate }}</h1>
+    </div>
+    <div class="col-auto bl">
+      <h2>{{ 'MODULO' | translate }}</h2>
+      <h6>{{ 'DS' | translate }}</h6>
+    </div>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <div class="col-12 p-0">
+      <p [innerHTML]="'DS_DESC' | translate"></p>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
 
-<button (click)="alertOpen()">Alert!</button>
-<button (click)="confirmOpen()">Confirm!</button>
+<mat-sidenav-container class="sidenav-uikit">
+  <mat-sidenav opened mode="side">
+    <nav>
+      <h3 class="clr-graffiti-grey ft-rytm ft-open-sans">{{ 'STYLEGUIDE' | translate }}</h3>
+      <ul>
+        <li>
+          <a href="#/UiKit/Styleguide/Type">{{ 'TYPE' | translate }}</a>
+        </li>
+        <li>
+          <a href="#/UiKit/Styleguide/Colors">{{ 'COLORS' | translate }}</a>
+        </li>
+      </ul>
+      <h3 class="clr-graffiti-grey ft-rytm ft-open-sans">{{ 'COMPONENTS' | translate }}</h3>
+      <ul>
+        <li>
+          <a href="#/UiKit/Components/ButtonCard">{{ 'BTN_CARD' | translate }}</a>
+        </li>
+        <li>
+          <a href="#/UiKit/Components/DialogNotification">{{ 'DIALOG' | translate }}</a>
+        </li>
+        <li>
+          <a href="#/UiKit/Components/SnackBarToast">{{ 'TOAST' | translate }}</a>
+        </li>
+      </ul>
+    </nav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="container uikit-container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
