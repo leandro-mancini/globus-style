@@ -24,6 +24,19 @@ h1, h2, h3, h4, h5, h6{
   font-family: $font-OpenSans;
 }
 
+pre{
+  color: $plt-graffiti-grey;
+}
+
+code{
+  padding: 0.2em 0.4em;
+  margin: 0;
+  background-color: $plt-white-ice;
+  border-radius: $bhvr-bvl-young;
+  color: $plt-graffiti-grey;
+  font-size: inherit;
+}
+
 .gs-title-1{
   color: $plt-graffiti-grey;
   @include font-opera;
@@ -54,12 +67,37 @@ h1, h2, h3, h4, h5, h6{
   @include font-bold;
 }
 
-.gs-intro-content{
-  border-bottom: 1px solid $plt-plastic-grey;
+p{
+  @include font-regular;
+  color: $plt-graffiti-grey;
+  @include font-harmony;
+}
+
+.highlight{
+  pre{
+    padding: 16px;
+    background-color: $plt-white-ice;
+
+    code{
+      padding: 0;
+    }
+  }
+}
+
+.box{
+  @include bhvr-stick;
+  padding: 25px;
 
   p{
-    color: $plt-plastic-grey;
-    @include font-see-with-me;
-    @include font-regular;
+    @include font-harmony;
+  }
+
+  .gs-intro-content{
+    border-bottom: 1px solid $plt-plastic-grey;
+    margin: 0 0 20px 0;
+
+    p{
+      @include font-see-with-me;
+    }
   }
 }
