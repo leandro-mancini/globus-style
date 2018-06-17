@@ -14,6 +14,7 @@ import { AngularMaterialModule } from './shared/angular-material/angular-materia
 import { AppComponent } from './app.component';
 import { DialogComponent } from './core/pages/componentes/dialog/dialog.component';
 import { ToastComponent } from './core/pages/componentes/toast/toast.component';
+import { ComecandoComponent } from './core/pages/introducao/comecando/comecando.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -23,7 +24,8 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     AppComponent,
     DialogComponent,
-    ToastComponent
+    ToastComponent,
+    ComecandoComponent
   ],
   imports: [
     BrowserModule,
