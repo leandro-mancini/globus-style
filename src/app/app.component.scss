@@ -1,0 +1,83 @@
+@import "./../assets/sass/_mixins.scss";
+@import "./../assets/sass/_variables.scss";
+
+.mat-toolbar{
+  background: $plt-full-light;
+  padding: 30px 40px;
+
+  .mat-toolbar-row{
+    padding: 0;
+  }
+
+  h1{
+    color: $plt-blue-lamp;
+    font-size: 55px;
+    line-height: 75px;
+    @include font-regular;
+  }
+
+  h2{
+    color: $plt-blue-lamp;
+    @include font-tenor;
+    @include font-regular;
+  }
+
+  h6{
+    color: $plt-white-platinum;
+    @include font-light;
+  }
+
+  p{
+    color: $plt-graffiti-grey;
+    margin: 0;
+    @include font-light;
+    @include font-regular;
+  }
+
+  .bl{
+    border-left: 1px solid #E0E1E2;
+  }
+}
+
+.mat-sidenav-container{
+  padding: 0 40px;
+  min-height: calc(100vh - 188px);
+
+  .mat-sidenav{
+    width: 240px;
+    background: none;
+    padding: 40px 0 0 0;
+
+    nav{
+      h3{
+        @include font-rytm;
+        @include font-regular;
+        color: $plt-graffiti-grey;
+      }
+
+      ul{
+        list-style: none;
+        margin: 0;
+        padding: 0 0 20px 0;
+
+        li{
+          border-left: 2px solid transparent;
+          padding: 4px 0 4px 15px;
+          margin: 0 0 5px 0;
+
+          &:hover{
+            border-left: 2px solid $plt-blue-lamp;
+          }
+
+          a{
+            display: block;
+            text-decoration: none;
+            @include font-light;
+            @include font-bold;
+            color: $plt-graffiti-grey;
+          }
+        }
+      }
+    }
+  }
+}

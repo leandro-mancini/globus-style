@@ -93,7 +93,7 @@ export class AppComponent {
   ) { }
 
   alertOpen() {
-    this.dialog.alert('Atenção', ['Teste de Mensagem 1');
+    this.dialog.alert('Atenção', ['Teste de Mensagem 1']);
   }
 
   confirmOpen() {
