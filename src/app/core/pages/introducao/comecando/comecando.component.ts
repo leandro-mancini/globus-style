@@ -6,6 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comecando.component.css']
 })
 export class ComecandoComponent implements OnInit {
+  code = `
+    <pre>
+      <code>
+import { GlobusStyleModule } from 'ngx-globus-style';
+
+@NgModule({
+  declarations: [AppComponent, ...],
+  imports: [GlobusStyleModule, ...],
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+}
+      </code>
+    </pre>`;
 
   constructor() { }
 

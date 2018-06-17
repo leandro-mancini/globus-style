@@ -5,6 +5,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HighlightModule } from 'ngx-highlightjs';
 
 import { environment } from '../environments/environment';
 
@@ -41,6 +42,7 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
+    HighlightModule.forRoot({ theme: 'default' })
   ],
   providers: [],
   bootstrap: [AppComponent],
