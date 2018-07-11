@@ -16,6 +16,8 @@ import { AppComponent } from './app.component';
 import { DialogComponent } from './core/pages/componentes/dialog/dialog.component';
 import { ToastComponent } from './core/pages/componentes/toast/toast.component';
 import { ComecandoComponent } from './core/pages/introducao/comecando/comecando.component';
+import { CoresTemaComponent } from './core/pages/styleguide/cores-tema/cores-tema.component';
+import { TypographyComponent } from './core/pages/styleguide/typography/typography.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -26,7 +28,9 @@ export function createTranslateLoader(http: HttpClient) {
     AppComponent,
     DialogComponent,
     ToastComponent,
-    ComecandoComponent
+    ComecandoComponent,
+    CoresTemaComponent,
+    TypographyComponent
   ],
   imports: [
     BrowserModule,
@@ -41,8 +45,8 @@ export function createTranslateLoader(http: HttpClient) {
         useFactory: (createTranslateLoader),
         deps: [HttpClient]
       }
-    }),
-    HighlightModule.forRoot({ theme: 'default' })
+    })
+    // HighlightModule.forRoot({ theme: 'default' })
   ],
   providers: [],
   bootstrap: [AppComponent],

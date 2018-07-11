@@ -24,6 +24,11 @@ h1, h2, h3, h4, h5, h6{
   font-family: $font-OpenSans;
 }
 
+ul{
+  list-style: none;
+  padding: 0;
+}
+
 pre{
   color: $plt-graffiti-grey;
 }
@@ -87,6 +92,7 @@ p{
 .box{
   @include bhvr-stick;
   padding: 25px;
+  display: inline-block;
 
   p{
     @include font-harmony;

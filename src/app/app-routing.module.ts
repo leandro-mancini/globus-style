@@ -3,12 +3,31 @@ import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { ComecandoComponent } from './core/pages/introducao/comecando/comecando.component';
+import { CoresTemaComponent } from './core/pages/styleguide/cores-tema/cores-tema.component';
+import { TypographyComponent } from './core/pages/styleguide/typography/typography.component';
 import { DialogComponent } from './core/pages/componentes/dialog/dialog.component';
+import { ToastComponent } from './core/pages/componentes/toast/toast.component';
 
 const routes: Routes = [
   {
     path: 'Comecando',
     component: ComecandoComponent
+  },
+  {
+    path: 'Styleguide/Cores',
+    component: CoresTemaComponent
+  },
+  {
+    path: 'Styleguide/Typography',
+    component: TypographyComponent
+  },
+  {
+    path: 'Components/Dialog',
+    component: DialogComponent
+  },
+  {
+    path: 'Components/Toast',
+    component: ToastComponent
   },
   {
     path: '**',

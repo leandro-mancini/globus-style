@@ -21,34 +21,34 @@
       <h3 class="clr-graffiti-grey ft-rytm ft-open-sans">{{ 'TIT_INTRODUÇÂO' | translate }}</h3>
       <ul>
         <li>
-          <a href="http://" title="{{ 'TIT_COMECANDO' | translate }}">{{ 'TIT_COMECANDO' | translate }}</a>
+          <a [routerLink]="['/Comecando']" title="{{ 'TIT_COMECANDO' | translate }}">{{ 'TIT_COMECANDO' | translate }}</a>
         </li>
       </ul>
       <h3 class="clr-graffiti-grey ft-rytm ft-open-sans">{{ 'STYLEGUIDE' | translate }}</h3>
       <ul>
-        <li>
+        <!-- <li>
           <a href="http://" title="{{ 'TIT_ESTRUTURA_GRID' | translate }}">{{ 'TIT_ESTRUTURA_GRID' | translate }}</a>
         </li>
         <li>
           <a href="http://" title="{{ 'TIT_CLASSES_FUNCIONAIS' | translate }}">{{ 'TIT_CLASSES_FUNCIONAIS' | translate }}</a>
-        </li>
+        </li> -->
         <li>
-          <a href="http://" title="{{ 'TIT_CORES_TEMA' | translate }}">{{ 'TIT_CORES_TEMA' | translate }}</a>
+          <a [routerLink]="['/Styleguide/Cores']" title="{{ 'TIT_CORES_TEMA' | translate }}">{{ 'TIT_CORES_TEMA' | translate }}</a>
         </li>
-        <li>
+        <!-- <li>
           <a href="http://" title="{{ 'TIT_ICONES' | translate }}">{{ 'TIT_ICONES' | translate }}</a>
-        </li>
+        </li> -->
         <li>
-          <a href="#/UiKit/Styleguide/Type">{{ 'TIT_TYPOGRAPHY' | translate }}</a>
+          <a [routerLink]="['/Styleguide/Typography']">{{ 'TIT_TYPOGRAPHY' | translate }}</a>
         </li>
       </ul>
       <h3 class="clr-graffiti-grey ft-rytm ft-open-sans">{{ 'COMPONENTS' | translate }}</h3>
       <ul>
         <li>
-          <a href="#/UiKit/Components/DialogNotification">{{ 'DIALOG' | translate }}</a>
+          <a [routerLink]="['/Components/Dialog']">{{ 'DIALOG' | translate }}</a>
         </li>
         <li>
-          <a href="#/UiKit/Components/SnackBarToast">{{ 'TOAST' | translate }}</a>
+          <a [routerLink]="['/Components/Toast']">{{ 'TOAST' | translate }}</a>
         </li>
       </ul>
     </nav>
