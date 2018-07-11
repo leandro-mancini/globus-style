@@ -42,3 +42,39 @@ $bhvr-bvl-full: 40px;
   border-radius: $bhvr-bvl-stoned;
   box-shadow: 0 16px 48px 0 rgba($plt-plastic-grey, 0.24);
 }
+
+.bhvr-bvl-young{
+  border-radius: $bhvr-bvl-young;
+}
+
+.bhvr-bvl-stoned{
+  border-radius: $bhvr-bvl-stoned;
+}
+
+.bhvr-bvl-full{
+  border-radius: $bhvr-bvl-full;
+}
+
+.bhvr-shape{
+  @include bhvr-shape;
+}
+
+.bhvr-sheet{
+  @include bhvr-sheet;
+}
+
+.bhvr-groove{
+  @include bhvr-groove;
+}
+
+.bhvr-stick{
+  @include bhvr-stick;
+}
+
+.bhvr-stick-charm{
+  @include bhvr-stick-charm;
+}
+
+.bhvr-block{
+  @include bhvr-block;
+}

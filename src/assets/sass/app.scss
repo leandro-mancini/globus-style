@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6{
 ul{
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 pre{
@@ -38,8 +39,10 @@ code{
   margin: 0;
   background-color: $plt-white-ice;
   border-radius: $bhvr-bvl-young;
-  color: $plt-graffiti-grey;
+  color: inherit;
   font-size: inherit;
+  display: inherit;
+  font-family: $font-OpenSans;
 }
 
 .gs-title-1{
@@ -89,21 +92,21 @@ p{
   }
 }
 
-.box{
-  @include bhvr-stick;
-  padding: 25px;
-  display: inline-block;
+// .box{
+//   @include bhvr-stick;
+//   padding: 25px;
+//   display: inline-block;
 
-  p{
-    @include font-harmony;
-  }
+//   p{
+//     @include font-harmony;
+//   }
 
-  .gs-intro-content{
-    border-bottom: 1px solid $plt-plastic-grey;
-    margin: 0 0 20px 0;
+//   .gs-intro-content{
+//     border-bottom: 1px solid $plt-plastic-grey;
+//     margin: 0 0 20px 0;
 
-    p{
-      @include font-see-with-me;
-    }
-  }
-}
+//     p{
+//       @include font-see-with-me;
+//     }
+//   }
+// }

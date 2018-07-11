@@ -16,7 +16,7 @@
   "FONTE_30": "Tenor",
   "FONTE_36": "Opera",
   "COLORS": "Colors",
-  "COLORS_DESC": "Existem classes no SCSS que podem ser utilizadas no código. Para inserí-las, basta trocar <br> o código <strong class='clr-red-lead'>$plt- por</strong>:",
+  "COLORS_DESC": "Existem classes no SCSS que podem ser utilizadas no código. Para inserí-las, basta trocar o código <strong class='clr-red-lead'><code>$plt</code>- por</strong>:",
   "COMPONENTS": "Components",
   "DIALOG": "Dialog",
   "TOAST": "Toast",
@@ -27,5 +27,6 @@
   "TIT_ICONES": "Ícones",
   "TIT_TYPOGRAPHY": "Typography",
   "TIT_COMECANDO": "Começando",
-  "TIT_INTRODUÇÂO": "Introdução"
+  "TIT_INTRODUÇÂO": "Introdução",
+  "TIT_PHYSICAL_BEHAVIOR": "Physical Behavior"
 }

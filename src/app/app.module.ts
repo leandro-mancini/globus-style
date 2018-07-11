@@ -18,6 +18,7 @@ import { ToastComponent } from './core/pages/componentes/toast/toast.component';
 import { ComecandoComponent } from './core/pages/introducao/comecando/comecando.component';
 import { CoresTemaComponent } from './core/pages/styleguide/cores-tema/cores-tema.component';
 import { TypographyComponent } from './core/pages/styleguide/typography/typography.component';
+import { BehaviorComponent } from './core/pages/styleguide/behavior/behavior.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -30,7 +31,8 @@ export function createTranslateLoader(http: HttpClient) {
     ToastComponent,
     ComecandoComponent,
     CoresTemaComponent,
-    TypographyComponent
+    TypographyComponent,
+    BehaviorComponent
   ],
   imports: [
     BrowserModule,
