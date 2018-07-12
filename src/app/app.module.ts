@@ -19,6 +19,7 @@ import { ComecandoComponent } from './core/pages/introducao/comecando/comecando.
 import { CoresTemaComponent } from './core/pages/styleguide/cores-tema/cores-tema.component';
 import { TypographyComponent } from './core/pages/styleguide/typography/typography.component';
 import { BehaviorComponent } from './core/pages/styleguide/behavior/behavior.component';
+import { ClassesFuncionaisComponent } from './core/pages/styleguide/classes-funcionais/classes-funcionais.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -32,7 +33,8 @@ export function createTranslateLoader(http: HttpClient) {
     ComecandoComponent,
     CoresTemaComponent,
     TypographyComponent,
-    BehaviorComponent
+    BehaviorComponent,
+    ClassesFuncionaisComponent
   ],
   imports: [
     BrowserModule,

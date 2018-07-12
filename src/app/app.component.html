@@ -28,9 +28,6 @@
       <ul>
         <!-- <li>
           <a href="http://" title="{{ 'TIT_ESTRUTURA_GRID' | translate }}">{{ 'TIT_ESTRUTURA_GRID' | translate }}</a>
-        </li>
-        <li>
-          <a href="http://" title="{{ 'TIT_CLASSES_FUNCIONAIS' | translate }}">{{ 'TIT_CLASSES_FUNCIONAIS' | translate }}</a>
         </li> -->
         <li>
           <a [routerLink]="['/Styleguide/Cores']" title="{{ 'TIT_CORES_TEMA' | translate }}">{{ 'TIT_CORES_TEMA' | translate }}</a>
@@ -43,6 +40,9 @@
         </li>
         <li>
           <a [routerLink]="['/Styleguide/Behavior']">{{ 'TIT_PHYSICAL_BEHAVIOR' | translate }}</a>
+        </li>
+        <li>
+          <a [routerLink]="['/Styleguide/ClassesFuncionais']" title="{{ 'TIT_CLASSES_FUNCIONAIS' | translate }}">{{ 'TIT_CLASSES_FUNCIONAIS' | translate }}</a>
         </li>
       </ul>
       <h3 class="clr-graffiti-grey ft-rytm ft-open-sans">{{ 'COMPONENTS' | translate }}</h3>

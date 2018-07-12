@@ -6,6 +6,7 @@ import { ComecandoComponent } from './core/pages/introducao/comecando/comecando.
 import { CoresTemaComponent } from './core/pages/styleguide/cores-tema/cores-tema.component';
 import { TypographyComponent } from './core/pages/styleguide/typography/typography.component';
 import { BehaviorComponent } from './core/pages/styleguide/behavior/behavior.component';
+import { ClassesFuncionaisComponent } from './core/pages/styleguide/classes-funcionais/classes-funcionais.component';
 
 import { DialogComponent } from './core/pages/componentes/dialog/dialog.component';
 import { ToastComponent } from './core/pages/componentes/toast/toast.component';
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'Styleguide/Behavior',
     component: BehaviorComponent
+  },
+  {
+    path: 'Styleguide/ClassesFuncionais',
+    component: ClassesFuncionaisComponent
   },
   {
     path: 'Components/Dialog',
