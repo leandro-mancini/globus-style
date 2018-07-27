@@ -1,6 +1,6 @@
 {
   "name": "ngx-globus-style",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "ngx-globus-style Um framework front-end de comportamento e estilo para projetos web, com uma interface usada por milhares de usuários. Mantido pelos desenvolvedores front-end da BgmRodotec. Globus Style.",
   "readmeFilename": "README.md" ,
   "keywords": [
