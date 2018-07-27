@@ -13,12 +13,19 @@ import { MatSnackBar, MatSnackBarRef } from '@angular/material';
   ]
 })
 export class ToastNotificationComponent {
-  public title: string;
-  public message: string;
+  title: string;
+  message: string;
+  action: string;
 
   constructor(
     public snackBarRef: MatSnackBarRef<ToastNotificationComponent>,
     public snackBar: MatSnackBar
   ) { }
+
+  dismiss(): void {
+    this.snackBarRef.dismiss();
+  }
+
+  get hasAction(): boolean { return !!this.action; }
 
 }

@@ -1,0 +1,28 @@
+snack-bar-container{
+    &.mat-snack-bar-container{
+        background: none;
+        padding: 0 0 20px 0;
+
+        .praxio-toast{
+            margin: 0;
+            max-width: 300px;
+            background: $plt-full-light;
+            border-radius: $bhvr-bvl-young;
+            filter: drop-shadow(0 16px 48px rgba($plt-black-carbon, 0.24));
+            color: $plt-graffiti-grey;
+            @include font-harmony;
+            border-left: 5px solid $plt-nature;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 14px 24px;
+
+            .mat-icon-button{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}

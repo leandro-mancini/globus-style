@@ -30,7 +30,9 @@ export class DialogNotificationService {
     this.dialogRef.componentInstance.message = msg;
     this.dialogRef.componentInstance.actions = false;
 
-    return this.dialogRef.afterClosed();
+    return null;
+
+    // return this.dialogRef.afterClosed();
   }
 
   confirm(title: string, message: string, config?: any): Observable<boolean>{
@@ -46,7 +48,9 @@ export class DialogNotificationService {
     this.dialogRef.componentInstance.message = message;
     this.dialogRef.componentInstance.actions = true;
 
-    return this.dialogRef.afterClosed();
+    return null;
+
+    // return this.dialogRef.afterClosed();
   }
 
   close(result: boolean) {

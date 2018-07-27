@@ -1,0 +1,4 @@
+:host ::ng-deep .mat-snack-bar-container{
+    background: none;
+    padding: 0 0 20px 0;
+}

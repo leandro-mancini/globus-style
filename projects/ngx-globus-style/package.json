@@ -1,9 +1,34 @@
 {
   "name": "ngx-globus-style",
   "version": "0.0.1",
+  "description": "ngx-globus-style Um framework front-end de comportamento e estilo para projetos web, com uma interface usada por milhares de usuários. Mantido pelos desenvolvedores front-end da BgmRodotec. Globus Style.",
+  "readmeFilename": "README.md" ,
+  "keywords": [
+    "Angular",
+    "Angular 6",
+    "Angular CLI",
+    "Angular Material",
+    "Typescript"
+  ],
+  "author": {
+    "name": "Leandro Mancini",
+    "email": "leandro.sousa@bgmrodotec.com.br"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandro-mancini/globus-style"
+  },
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/material": "^6.2.1"
+    "@angular/material": "^6.2.1",
+    "ng-packagr": "^3.0.6",
+    "scss-bundle": "^2.3.2",
+    "ts-node": "^7.0.0"
+  },
+  "scripts": {
+    "build": "ng-packagr -p package.json",
+    "postbuild": "ts-node ./scripts/css-bundle.ts"
   }
 }

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSnackBarModule, MatButtonModule, MatIconModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastNotificationComponent } from './toast-notification.component';
@@ -9,11 +9,14 @@ import { ToastNotificationComponent } from './toast-notification.component';
   imports: [
     CommonModule,
     BrowserAnimationsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatButtonModule,
+    MatIconModule
   ],
   declarations: [ToastNotificationComponent],
   exports: [
     ToastNotificationComponent
-  ]
+  ],
+  entryComponents: [ToastNotificationComponent]
 })
 export class ToastNotificationModule { }
