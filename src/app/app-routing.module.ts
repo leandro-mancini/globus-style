@@ -10,6 +10,7 @@ import { ClassesFuncionaisComponent } from './core/pages/styleguide/classes-func
 
 import { DialogComponent } from './core/pages/componentes/dialog/dialog.component';
 import { ToastComponent } from './core/pages/componentes/toast/toast.component';
+import { AccordionComponent } from './core/pages/componentes/accordion/accordion.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
   {
     path: 'Components/Toast',
     component: ToastComponent
+  },
+  {
+    path: 'Components/Accordion',
+    component: AccordionComponent
   },
   {
     path: '**',

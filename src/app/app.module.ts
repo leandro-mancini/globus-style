@@ -21,6 +21,7 @@ import { CoresTemaComponent } from './core/pages/styleguide/cores-tema/cores-tem
 import { TypographyComponent } from './core/pages/styleguide/typography/typography.component';
 import { BehaviorComponent } from './core/pages/styleguide/behavior/behavior.component';
 import { ClassesFuncionaisComponent } from './core/pages/styleguide/classes-funcionais/classes-funcionais.component';
+import { AccordionComponent } from './core/pages/componentes/accordion/accordion.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -35,7 +36,8 @@ export function createTranslateLoader(http: HttpClient) {
     CoresTemaComponent,
     TypographyComponent,
     BehaviorComponent,
-    ClassesFuncionaisComponent
+    ClassesFuncionaisComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,

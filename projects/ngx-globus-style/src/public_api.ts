@@ -15,3 +15,7 @@ export * from './lib/dialog-notification/dialog-notification.module';
 export * from './lib/toast-notification/toast-notification.component';
 export * from './lib/toast-notification/toast-notification.service';
 export * from './lib/toast-notification/toast-notification.module';
+
+// Accordion
+export * from './lib/accordion/accordion.component';
+export * from './lib/accordion/accordion.module';

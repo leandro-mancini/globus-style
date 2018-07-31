@@ -5,6 +5,7 @@ import { DialogNotificationModule } from './dialog-notification/dialog-notificat
 import { MatIconModule, MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { AccordionModule } from './accordion/accordion.module';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
   exports: [
     NgxGlobusStyleComponent,
     DialogNotificationModule,
-    ToastNotificationModule
+    ToastNotificationModule,
+    AccordionModule
   ]
 })
 export class GlobusStyleModule { 
