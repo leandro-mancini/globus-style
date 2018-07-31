@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Mukta:400,600,700');
 
-$font-OpenSans: 'Open Sans';
-$font-OpenSans-semi-bold: 600;
-$font-OpenSans-bold: 700;
+$font-Mukta: 'Mukta';
+$font-Mukta-semi-bold: 600;
+$font-Mukta-bold: 700;
 
 
 @mixin font-regular{
-  font-family: $font-OpenSans;
+  font-family: $font-Mukta;
   font-weight: normal;
 }
 
 @mixin font-semi-bold{
-  font-family: $font-OpenSans;
-  font-weight: $font-OpenSans-semi-bold;
+  font-family: $font-Mukta;
+  font-weight: $font-Mukta-semi-bold;
 }
 
 @mixin font-bold{
-  font-family: $font-OpenSans;
-  font-weight: $font-OpenSans-bold;
+  font-family: $font-Mukta;
+  font-weight: $font-Mukta-bold;
 }
 
 @mixin font-sutil{
@@ -60,9 +60,9 @@ $font-OpenSans-bold: 700;
   line-height: 40px;
 }
 
-.gs-open-sans{ font-family: $font-OpenSans; }
-.gs-open-sans-bold{ font-weight: $font-OpenSans-bold; }
-.gs-open-sans-semi-bold{ font-weight: $font-OpenSans-semi-bold; }
+.gs-open-sans{ font-family: $font-Mukta; }
+.gs-open-sans-bold{ font-weight: $font-Mukta-bold; }
+.gs-open-sans-semi-bold{ font-weight: $font-Mukta-semi-bold; }
 
 .gs-sutil{ @include font-sutil; }
 .gs-light{ @include font-light; }
